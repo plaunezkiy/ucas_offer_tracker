@@ -44,10 +44,10 @@ def main():
 				if date == today:
 					message = update.parent.findAll("p")[1]
 					send_message("Update to UCAS profile!" + "\n" + message.get_text())
-				time.sleep(1500)
+				time.sleep(1200)
 		except Exception as e:
 			send_message(f"Bot's down with such error: {e}")
-			time.sleep(5)
+			time.sleep(1200)
 			continue
 
 
